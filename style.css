@@ -1,123 +1,239 @@
 html, body {
-    width:100%;
-    height:100%;
-    margin:0;
-    font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
-    font-family: "helvetica neue", sans-serif;
+  font-family: "helvetica neue", sans-serif;
 }
 
 .nav {
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    
-    background: rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.28);
-    text-align: right;
-    height:70px;
-    line-height:70px;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.28);
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
 }
+
 /* Toggle NAVBAR with no Javascript 
 ################### */
 .menu {
-    margin: 0 30px 0 0;
-    overflow: auto;
+  margin: 0 30px 0 0;
+  overflow: auto;
 }
 
 .menu a {
-    clear:right;
-    text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    line-height: 70px;
-    font-size: 1.8em;
-    top:2px;
+  clear: right;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  line-height: 70px;
+  font-size: 1.8em;
+  top: 2px;
 }
 
 span {
-    color:#ff4800;
+  color: #ff4800;
 }
 
-a:hover{
-    color:crimson;
+a:hover {
+  color: crimson;
 }
 
 label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-    color: white;
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
 }
 
 #toggle {
-    display: none;
-    
+  display: none;
 }
 
-section{
-    display: flex;
+section {
+  display: flex;
 }
 
-.break{
-    width: 100%;
+.break {
+  width: 100%;
 }
 
 .home-hero {
-    background-image: url("./images/build.jpg");
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 900px;
-    left: 0px;
-    top: 0px;
-    color: #FFF;
-  }
-  
-  .home-textbox {
-    position: absolute;
-    width: 550px;
-    height: 634px;
-    left: 23px;
-    top: 162px;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    
+  background-image: url("./images/build.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+  color: #FFF;
+}
+
+.home-textbox {
+  position: absolute;
+  width: 550px;
+  height: 634px;
+  left: 23px;
+  top: 162px;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.home-title {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  color: #FFF;
+}
+
+h2 {
+  font-size: 5em;
+  margin-bottom: 14px;
+  margin-top: 45px;
+  color: white;
+  font-weight: 800;
+  left: 0;
+}
+
+p {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 212%;
+  /* or 64px */
+  overflow: auto;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.logo {
+  float: left;
+  color: white;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 4em;
+  float: left;
+  position: absolute;
+  margin: .3rem 10px;
+  line-height: 100%;
+}
+
+.logo1 {
+  position: relative;
+  border-radius: 50%;
+  height: 3rem;
+  top: .6em;
+}
+
+.logo2 {
+  position: relative;
+  top: 5;
+  height: 3rem;
+  top: .6em;
+}
+
+.break {
+  width: 100%;
+}
+
+a {
+  display: flex;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  letter-spacing: .008em;
+}
+
+.button {
+  background-color: #AC5A5A;
+  width: 9em;
+  height: 2em;
+  display: flex;
+  text-align: center;
+  display: inline-block;
+  width: 1em;
+  height: 3em;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  width: 9em;
+  height: 2em;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+@media only screen and (max-width:900px) {
+  label {
+    display: block;
+    cursor: pointer;
   }
 
-  .home-title {
-    margin: 0;
-    padding: 0;
+  .menu {
+    text-align: center;
     width: 100%;
-    left: 0px;
-    top: 0px;
-    color: #FFF;
+    display: none;
+    background-color: crimson;
   }
-  
+
+  .menu a {
+    display: block;
+    margin: 0;
+    background-color: black;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+  }
+
+  .logo {
+    position: relative;
+    color: white;
+  }
+
+  .logo1 h2::after {
+    color: white;
+    content: "Profile";
+  }
+
   h2 {
-    font-size: 5em;
+    font-size: clamp(40px, 1vw, 32px);
     margin-bottom: 14px;
-    margin-top: 45px;
+    margin-top: 30px;
     color: white;
     font-weight: 800;
-    left: 0;
+  }
+
+  .home-hero {
+    height: 600px;
   }
 
   p {
     font-family: Poppins;
     font-style: italic;
     font-weight: normal;
-    font-size: 3em;
+    font-size: clamp(16px, 4vw, 22px);
+    padding: 10px;
     line-height: 212%;
     /* or 64px */
     overflow: auto;
@@ -126,130 +242,8 @@ section{
     color: #FFFFFF;
   }
 
-  .logo {
-      float:left;
-      color: white;
-  }
-  h3 {
-
-    font-weight: 800;
-        font-size: 4em;
-        float: left;
-        position: absolute;
-        margin: .3rem 10px;
-        line-height: 100%;
-  }
-
-  .logo1 {
-      position: relative;
-    border-radius: 50%;
-    height:3rem;
-   top:.6em;
-  }
-
-  .logo2 {
-    position: relative;
-    top: 5;
-    height:3rem;
-    top:.6em;
-  }
-
-  .break{
-      width:100%;
-  }
-
-  a{
-   
-    display: flex;
-    text-align: center;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    letter-spacing: .008em;
-}
-.button {
-    background-color: #AC5A5A;
-    width: 9em;
-    height: 2em;
-    display: flex;
-    text-align: center;
-    display: inline-block;
-    width: 1em;
-    height: 3em;
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    width: 9em;
-    height: 2em;
-    font-weight: 800;
-    letter-spacing: .1em;
-}
-
-
-
-
-
-@media only screen and (max-width:900px) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;  
-        background-color: crimson;
-                                        
-    }
-    .menu a {
-        display:block;
-        margin:0;
-        background-color: black;
-    }
-    #toggle:checked + .menu {
-        display: block;
-        
-    }
-
-    .logo {
-        position: relative;
-        color: white;
-    }
-
-    .logo1 h2::after {
-        color: white;
-        content: "Profile";
-        
-    }
-    h2 {
-        font-size:clamp(40px, 1vw, 32px);
-        margin-bottom: 14px;
-        margin-top: 30px;
-        color: white;
-        font-weight: 800;
-      }
-
-      
-.home-hero {
-    height: 600px;
-  }
-  
-      p {
-        font-family: Poppins;
-        font-style: italic;
-        font-weight: normal;
-        font-size: clamp(16px, 4vw, 22px);
-        padding: 10px;
-        line-height: 212%;
-        /* or 64px */
-        overflow: auto;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
-      }
-
-    .home-textbox {
-        position: absolute;
+  .home-textbox {
+    position: absolute;
     width: 90vw;
     height: 460px;
     left: 1em;
@@ -257,8 +251,9 @@ section{
     display: inline-block;
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
-      }
+  }
 }
+
 /*
 @media only screen and (max-width:620px) {
 
