@@ -1,14 +1,34 @@
-html, body {
+*{
+   box-sizing: border-box; 
+    margin: 0; 
+}
+
+ body {
     width:100%;
     height:100%;
     margin:0;
     font-family: 'Poppins', sans-serif;
+    background-color: black;
 }
 
 html {
     font-family: "helvetica neue", sans-serif;
 }
 
+#wrapper{ 
+	display:block; 
+    margin:0; 
+    overflow: hidden;
+}
+
+#content{ 
+	display:block; 
+}
+
+.container{
+    width: 100%;
+    overflow: hidden;
+}
 .nav {
     position: absolute;
     width: 100%;
@@ -20,6 +40,7 @@ html {
     text-align: right;
     height:70px;
     line-height:70px;
+
 }
 
 /* Toggle NAVBAR with no Javascript 
@@ -60,8 +81,7 @@ label {
 }
 
 #toggle {
-    display: none;
-    
+    display: none; 
 }
 
 .home-hero {
@@ -78,21 +98,107 @@ label {
     width: 100%;
     height:100vh;
     color: #FFF;
+    overflow: hidden;
   }
   
   .home-textbox {
     position: absolute;
     width: 550px;
-    height: 75vh;
+    height: 80vh;
     left: 23px;
-    top: 162px;
+    top: 110px;
     display: flex;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
+    background: rgba(0, 0, 0, 0.65);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;   
+    z-index: 5;
   }
+
+  .home-title{
+      position: absolute;
+  }
+
+    /* Cards
+  ################ */
+  
+  .container2{
+    position: absolute;
+    height: 70vh;
+    width: 550px;
+    right: 0%;
+    top: 70px;
+    width:100%;
+   
+  }
+  .box{
+      position: absolute;
+  }
+
+  .card{  
+      display: block;
+  }
+
+  #sale{
+    margin: 0;
+    right: 5%;
+    top: 19%;
+    font-size: 6em;
+    line-height: 100%;
+    color: #ff1f1fd9;
+    transform: rotate(32.92deg);
+}
+
+  .first{
+    transform: translate(-50%, -50%, 40px);
+    z-index:4;
+    top: 12%;
+    right: 14%;
+ }
+    .second{
+    transform: translate(-50%, -50%, 30px);
+    z-index:3;
+    right:18%;
+    top:19.7%;
+    position: absolute;
+ }
+
+ .third{
+    transform: translate(-50%, -50%, 20px);
+    z-index:2;
+    right:0%;
+    top:15.5%;
+    position: absolute;
+}
+
+ /* Grid
+  ################ */
+
+  .grid{
+    position:relative;
+    display:flex;
+    flex-flow:column wrap;
+    width:100%;
+    height:50em;
+    border:2px solid black;
+}
+
+.green{
+    background-image:url(./images/gird1img.jpg);
+    background-size: cover;
+
+}
+.yellow{
+    background:#FF9900;
+}
+.red{
+    background-image: url(./images/grid2img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.col1{width:40%;height:100%;}
+.col2{width:60%;height:50%;}
 
   /* Typography
   ################ */
@@ -108,7 +214,7 @@ label {
   p {
     font-style: italic;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 1.9em;
     line-height: 212%;
     /* or 64px */
     overflow: auto;
@@ -147,31 +253,19 @@ label {
     backdrop-filter: blur(28px);
   }
 
-  /* ################ */
+  /* link & buttons
+   ################ */
 
   .logo {
       float:left;
       color: white;
   }
 
-  .logo1 {
-      position: relative;
-    border-radius: 50%;
-    height:3rem;
-   top:.6em;
-  }
-
-  .logo2 {
-    position: relative;
-    top: 5;
-    height:3rem;
-    top:.6em;
-  }
-
   a{
     text-decoration: none;
     letter-spacing: .015em;
 }
+
 .button {
     background-color: #AC5A5A;
     display: inline-block;
@@ -198,21 +292,69 @@ label {
 ############### */
 
 #svg {
-    margin: 0px;
-   width: 100%;
-   padding: 0px;
-   visibility:none;
+    margin: 70px auto;
+    width: 100%;
+    padding: 0px;
+}
+
+
+@media only screen and (min-width:1220px) {
+    .bk{
+        display: none;
+    }
+#bk1{
+    display: none;
+}
+#bk2{
+    display: none;
+}
+}
+
+@media only screen and (max-width:1220px) {
+
+    .third{
+        visibility: hidden;
+    }
+
+    .first{
+    right:0;
+    justify-content: flex-end;
+    }
+    
+
+}
+
+@media only screen and (max-width:1360px) {
+
+    .second{
+        visibility: hidden;
+    }
+    .bk{
+        position: absolute;
+        right: 0%;
+        top: 0.2%;
+        z-index: -1;
+    }
+    #bk2{
+        display:flex !important;
+        position: absolute;
+        right: 0%;
+        top: 0.2%;
+        z-index: -1;
+    }
+  
+}
+
+@media only screen and (max-width:1061px) {
+    .first{
+        visibility: hidden;
+    }
+
 }
 
 
 
-
-
-@media only screen and (max-width:940px) {
-    body{
-        overflow: hidden;
-    }
-
+@media only screen and (max-width:1060px) {
     label {
         display: block;
         cursor: pointer;
@@ -221,16 +363,17 @@ label {
         text-align: center;
         width: 100%;
         display: none;  
-        background-color: ;
+        
                                         
     }
     .menu a {
         display:block;
         margin:0;
-        background-color:rgba(0, 0, 0, 0.952);
+        background-color:rgba(42 42 42 / 94%);
     }
     #toggle:checked + .menu {
         display: block;
+        z-index: 6;
     }
 
     .logo {
@@ -256,10 +399,12 @@ label {
 .home-hero {
     height: 100vh;
   }
+
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
       p {
         font-family: Poppins;
@@ -276,15 +421,8 @@ label {
       }
 
     .home-textbox {
-    position: absolute;
-    width: 90vw;
-    height: 85vh;
-    left: 1em;
-    top: 105px;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    contain: size;
+    width:90vw;
+    left: 2.5em;
       }
 
       .button a {
@@ -297,7 +435,24 @@ label {
     .header{
         visibility: hidden;
     }
-    
+
+    img{
+        width:550px;
+        height: 80vh;
+    }
+
+    .card{
+        visibility: hidden;
+    }
+
+    #wrapper{ 
+        display: contents; 
+        margin:0; 
+        overflow: hidden;
+    } 
+    #content{ 
+        display: ;
+    }
     
 }
 
@@ -309,6 +464,7 @@ label {
     .home-textbox {
         height: 24em;
         top: 15%;
+        margin: 0 auto;
     }
     h2{
         font-size: 4em;
@@ -320,3 +476,4 @@ label {
         font-size: 3vh;
         margin: 0px 1px 2vh;
     }
+}
