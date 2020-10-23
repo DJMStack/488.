@@ -534,9 +534,10 @@ li{
         font-size:4vh;
       }
 
+
       #Subscribe{
         position: relative;
-        font-size: 1.4vw;
+        font-size: 1.35vw;
         font-weight: 100;
         text-align:-webkit-center;
       }
@@ -579,6 +580,9 @@ li{
         font-size: 3em;
     }
 
+    p{
+
+    }
     .home-textbox {
         width:90vw;
         height:75vh;
@@ -597,10 +601,10 @@ li{
 
     #Subscribe{
         position: relative;
-        font-size: 1.4vw;
+        font-size: 1.2vw;
         font-weight: 100;
         width: 20em;
         text-align:-webkit-center;
-        margin: 1em;
+        margin: 1em 0px;
       }
 }
