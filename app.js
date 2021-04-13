@@ -4,7 +4,7 @@ document.getElementById('Sales').addEventListener('click', link);
 document.getElementById('Shop').addEventListener('click', link);
 document.getElementById('User').addEventListener('click', link);
 
-alert("Made to be seen with screens with 1440px or smaller, there won't be an update for the object has been filled");
+alert("Made to be seen with screens with 1440px or smaller, there won't be an update because the objective has been filled");
 
 var name = prompt("Enter you name to sign in");
 document.getElementById('UserName').innerHTML = name;
