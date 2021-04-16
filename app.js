@@ -27,6 +27,4 @@ alert("Hello " + capitalisedName);
 
 
 
-function link(e){
-    alert("This would go to another page");
-};
+
